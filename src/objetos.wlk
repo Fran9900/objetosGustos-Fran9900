@@ -41,8 +41,8 @@ object munieco{
 	method material(){
 		return "vidrio"
 	}
-	method peso(){
-		return "variable"
+	method peso(gramos){
+		return gramos
 	}
 }
 
@@ -53,7 +53,59 @@ object placa{
 	method material(){
 		return "cobre"
 	}
-	method peso(){
-		return "variable"
+	method peso(gramos){
+		return gramos
 	}
+}
+
+object arito{
+    method color(){
+        return "celeste"
+    }
+    method material(){
+        return "cobre"
+    }
+    method peso(){
+        return 180
+    }
+}
+
+object banquito{
+    var colorInicial = "naranja"
+    
+    method setColor(color){
+        colorInicial = color
+    }
+    
+    method color(){
+        return colorInicial
+    }
+    
+    method material(){
+        return "madera"
+    }
+    
+    method peso(){
+        return 1700
+    }
+}
+
+object cajita{
+    var objetoAdentro = remera
+    
+    method cambiarObjetoAdentro(otroObjeto) {
+        objetoAdentro = otroObjeto
+    }
+    
+    method color(){
+        return "rojo"
+    }
+    
+    method material(){
+        return "cobre"
+    }
+    
+    method peso(){
+        return 400 + objetoAdentro.peso()
+    }
 }
