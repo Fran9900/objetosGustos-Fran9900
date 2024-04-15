@@ -47,9 +47,14 @@ object munieco{
 }
 
 object placa{
-	method color(){
-		return "variable"
-	}
+	var colorElegido = "variable"
+	
+    method setColor(color){
+        colorElegido = color
+    }
+    method color(){
+    	return colorElegido
+    }
 	method material(){
 		return "cobre"
 	}

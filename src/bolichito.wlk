@@ -14,7 +14,7 @@ object bolichito {
     }
     
     method esBrillante() {
-        return ((objetoVidriera.material() == "vidrio" || objetoMostrador.material() == "vidrio")) || 
+        return ((objetoVidriera.material() == "vidrio" || objetoMostrador.material() == "vidrio")) && 
      	   ((objetoVidriera.material() == "cobre" || objetoMostrador.material() == "cobre"))
     }
     
